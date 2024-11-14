@@ -1,0 +1,207 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF8E7; /* Cream background color */
+    color: #333; /* Dark text for readability */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #4B3832; /* Dark brown for headings */
+}
+
+header p {
+    font-size: 1em;
+    color: #8C7B75; /* Lighter brown for subtitle */
+}
+
+.contact-links a {
+    margin: 0 10px;
+    color: #6D4C41; /* Medium brown for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-links a:hover {
+    color: #3E2723; /* Darker brown on hover */
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.intro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.research, .news {
+    background-color: #F1E4D3; /* Slightly darker cream for sections */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #4B3832; /* Dark brown for section headings */
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+a {
+    color: #6D4C41;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3E2723;
+}
+
+.research {
+    background-color: #F1E4D3; /* Background color in cream tone */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.research h2 {
+    color: #4B3832; /* Dark brown color for section headings */
+    font-family: 'Crete Round', serif;
+    margin-bottom: 10px;
+}
+
+.research p {
+    color: #4B3832; /* Dark brown color for text */
+    font-family: 'Crete Round', serif;
+}
+
+.research ul {
+    list-style-type: disc; /* Sets standard bullet points */
+    padding-left: 20px; /* Adds padding to align bullets */
+    font-family: 'Crete Round', serif;
+    color: #4B3832; /* Dark brown for list items */
+}
+
+.research li {
+    margin-bottom: 8px;
+}
+
+.education {
+    background-color: #F1E4D3; /* Cream background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.education h2 {
+    color: #4B3832; /* Dark brown for section heading */
+    font-family: 'Crete Round', serif;
+    margin-bottom: 10px;
+}
+
+.education ul {
+    list-style-type: disc; /* Bullet points */
+    padding-left: 20px; /* Aligns bullets */
+    font-family: 'Crete Round', serif;
+    color: #4B3832; /* Dark brown for list items */
+}
+
+.education li {
+    margin-bottom: 8px;
+}
+
+.education li strong {
+    font-weight: bold; /* Emphasizes university names */
+}
+
+
+/* Apply Crete Round font globally */
+body, h1, h2, h3, p, a, ul, li, span, strong, em, section, div {
+    font-family: 'Crete Round', serif;
+    font-weight: 400; /* Regular style */
+}
+
+/* Additional styles */
+.publications {
+    background-color: #F1E4D3; /* Slightly darker cream for sections */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.publications h2 {
+    color: #4B3832; /* Dark brown for section headings */
+    margin-bottom: 10px;
+}
+
+.publications ul {
+    list-style-type: none;
+}
+
+.publications li {
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.publication-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.publication-header strong {
+    font-weight: bold;
+}
+
+.publication-header .year {
+    font-size: 2em;
+    color: #4B3832; /* Dark brown color for year */
+    font-weight: bold;
+}
+
+.publications li em {
+    color: #8C7B75; /* Lighter brown for subtitle text */
+}
+
+.publications a {
+    color: #6D4C41; /* Medium brown for links */
+    text-decoration: none;
+}
+
+.publications a:hover {
+    color: #3E2723; /* Darker brown on hover */
+}
+
+.last-publication-of-year {
+    border-top: 1px solid #4B3832; /* Dark brown for the line */
+    padding-top: 15px;
+}

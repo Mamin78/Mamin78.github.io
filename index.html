@@ -1,182 +1,630 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammadamin Shafiei</title>
-    <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
-        <style>
-            /* Include your CSS here or in a separate CSS file */
-        </style>
-    </head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mohammadamin Shafiei</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lalezar&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<style>
+:root {
+  --primary: #20202a;
+  --secondary: #e8ac7c;
+  --accent: #b6652e;
+  --neutral: #dedede;
+}
+
+/* Persian rug SVG pattern background */
+body {
+  background: linear-gradient(135deg, #252442 0%, #20202a 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: var(--neutral);
+  font-family: 'Inter', 'Vazirmatn', 'Roboto', Arial, sans-serif;
+  letter-spacing: 0.02em;
+  position: relative;
+  overflow-x: hidden;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.18;
+  pointer-events: none;
+  background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"><g opacity="0.9"><rect x="0" y="0" width="400" height="400" fill="none"/><g stroke="%23e8ac7c" stroke-width="1" fill="none"><path d="M0 200h400"/><path d="M200 0v400"/><ellipse cx="200" cy="200" rx="120" ry="120"/><ellipse cx="200" cy="200" rx="80" ry="80"/><ellipse cx="200" cy="200" rx="40" ry="40"/></g><g fill="%23b6652e"><circle cx="200" cy="200" r="8"/><circle cx="56" cy="200" r="4"/><circle cx="344" cy="200" r="4"/><circle cx="200" cy="56" r="4"/><circle cx="200" cy="344" r="4"/></g></g></svg>');
+  background-size: 700px 700px;
+  background-repeat: repeat;
+  animation: carpetScroll 60s linear infinite;
+}
+@keyframes carpetScroll {
+  to {
+    background-position: 400px 200px;
+  }
+}
+
+/* Container and Section Card Styles */
+.container {
+  position: relative;
+  max-width: 780px;
+  margin: 54px auto 42px auto;
+  background: rgba(32,32,42,0.92);
+  border-radius: 22px;
+  box-shadow: 0 18px 40px 0 rgba(32,15,20,0.24), 0 1.5px 4.5px 0 #e8ac7c1a;
+  padding: 38px 24px 44px 24px;
+  z-index: 1;
+  border: 2.5px solid transparent;
+  /* Rug border effect: */
+  box-shadow: 0 0 0 8px #1e1e32, 0 5px 32px rgba(45,38,58,0.22), 0 0 0 4px #e8ac7c;
+  animation: fadeCard 1.1s cubic-bezier(.42,0,.58,1.03);
+}
+@keyframes fadeCard {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: none; }
+}
+
+section {
+  background: rgba(32,32,42,0.98);
+  border-radius: 16px;
+  margin: 40px 0 0 0;
+  box-shadow: 0 4px 18px rgba(45,41,42,0.08);
+  padding: 30px 22px 22px 22px;
+  position: relative;
+  border: 1.5px solid #2b2133;
+  overflow: hidden;
+  z-index: 2;
+  animation: fadeUpCard 1s cubic-bezier(.42,0,.58,1.03);
+  animation-fill-mode: both;
+}
+section:first-of-type,.intro {
+  margin-top: 0;
+}
+section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: url('data:image/svg+xml;utf8,<svg width="420" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="420" height="22" fill="none"/><path d="M0 11 Q50 0 105 11 T210 11 T315 11 T420 11" stroke="%23e8ac7c" stroke-width="1.5" fill="none"/><circle fill="%23b6652e" cx="0" cy="11" r="3"/><circle fill="%23b6652e" cx="210" cy="11" r="3"/><circle fill="%23b6652e" cx="420" cy="11" r="3"/></svg>');
+  background-size: 410px 24px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  opacity: 0.18;
+}
+@keyframes fadeUpCard {
+  from { opacity:0; transform: translateY(36px);}
+  to { opacity:1; transform: none;}
+}
+
+/* Header and Hero */
+header {
+  text-align: center;
+  margin-bottom: 28px;
+  padding-bottom: 10px;
+  position: relative;
+}
+header h1 {
+  font-family: 'Lalezar', 'Inter', 'Vazirmatn', sans-serif;
+  color: var(--secondary);
+  font-size: 2.6rem;
+  letter-spacing: 0.07em;
+  margin-bottom: 0.2em;
+  text-shadow: 0 2px 9px #2d22221c;
+  background: linear-gradient(90deg, #e8ac7c 9%, #b6652e 41%, #e8ac7c 81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: headingShine 3.5s linear infinite;
+}
+@keyframes headingShine {
+  0% {background-position: 0%;}
+  80% {background-position: 100%;}
+  100% {background-position: 0%;}
+}
+header p {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+.contact-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.contact-links a {
+  color: var(--secondary);
+  font-weight: 600;
+  text-decoration: none;
+  background: linear-gradient(90deg, #1b181f 60%, #272532 100%);
+  padding: 6px 16px;
+  border-radius: 15px;
+  border: 2.5px solid #e8ac7c22;
+  margin: 0 3px;
+  font-family: 'Inter', 'Vazirmatn', Arial, sans-serif;
+  font-size: 1em;
+  transition: border-color 0.3s, box-shadow 0.3s, color 0.28s, background .3s;
+  box-shadow: 0 4px 14px #1110151a;
+  position: relative;
+  overflow: hidden;
+}
+.contact-links a:hover,
+.contact-links a:focus {
+  color: #fff;
+  border-color: #b6652e;
+  background: linear-gradient(92deg, #b6652e 60%, #e8ac7c 100%);
+  box-shadow: 0 1px 12px #b6652e66;
+  animation: buttonShimmer 1.4s linear infinite;
+  outline: none;
+}
+@keyframes buttonShimmer {
+  0% { box-shadow: 0 1px 10px #e8ac7c44;}
+  70% { box-shadow: 0 2px 22px #b6652e66;}
+  100% { box-shadow: 0 1px 10px #e8ac7c44;}
+}
+
+/* Profile Image Section */
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  margin-bottom: 0;
+  animation-delay: .05s;
+}
+.intro img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #e8ac7c;
+  box-shadow: 0 4px 24px #e8ac7c35, 0 1.5px 8px var(--primary);
+  background: #45405b;
+  flex-shrink: 0;
+  transition: transform .4s cubic-bezier(.44,0,.43,1.24);
+  will-change: transform;
+}
+.intro img:hover {
+  transform: scale(1.045) rotate(-2deg) translateY(-4px);
+}
+.intro p {
+  font-size: 1.11rem;
+  color: var(--neutral);
+  line-height: 1.7;
+  letter-spacing: 0.010em;
+  max-width: 440px;
+}
+
+@media (max-width: 600px) {
+  .intro { flex-direction: column; align-items: flex-start; text-align:left; gap: 20px; }
+  .intro img { margin-bottom: 12px; }
+  .container { padding: 15px 5px 24px 5px;}
+  section {padding: 24px 8px 18px 8px;}
+}
+
+/* Section Headings & Persian motifs */
+section h2 {
+  font-family: 'Lalezar', 'Inter', 'Vazirmatn', sans-serif;
+  color: var(--secondary);
+  font-size: 1.62rem;
+  margin: 0 0 0.8em 0;
+  letter-spacing: 0.13em;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px #967e6444;
+  padding-bottom: 8px;
+  position: relative;
+  background: linear-gradient(90deg, #e8ac7c 0%, #b6652e 50%, #e8ac7c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: headingShine 4.3s linear infinite;
+}
+section h2::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 41px;
+  margin-top: 8px;
+  margin-bottom: 2px;
+  border-radius: 1.1rem;
+  background: linear-gradient(90deg, #e8ac7c 0%, #b6652e 80%, #e8ac7c 100%);
+  opacity: 0.53;
+  animation: widthExpand .9s both;
+}
+@keyframes widthExpand {
+  from {width: 0;}
+  to {width: 41px;}
+}
+ul {
+  margin:18px 0 0 20px;
+  padding-left: 0;
+}
+li {
+  margin-bottom: 13px;
+  font-size: 1.03rem;
+  line-height: 1.7;
+  transition: color .35s;
+}
+
+section ul li {
+  position: relative;
+  padding-left: 22px;
+}
+section ul li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 7px;
+  width: 10px; height: 10px;
+  border-radius: 40%;
+  background: linear-gradient(150deg, #e8ac7c 30%, #b6652e 90%);
+  border: 1.2px solid #362623;
+  box-shadow: 0 1px 6px #ba855533;
+  opacity: 0.91;
+  animation: popin .7s cubic-bezier(.36,0,.64,1.23);
+}
+@keyframes popin { 0%{transform: scale(0);}100%{transform: scale(1);} }
+
+.research ul { columns: 2; column-gap: 48px; }
+@media (max-width:460px){
+  .research ul { columns: 1;}
+}
+
+/* News section w. pulse animation for recent items */
+.news ul li {
+  border-left: 3px solid #b6652e44;
+  padding-left: 19px;
+  margin-bottom: 12px;
+  position: relative;
+  background: none;
+  font-size: 1.04rem;
+  animation: fadeUpCard 0.92s 0.1s cubic-bezier(.49,0,.49,1.13) both;
+  z-index: 1;
+}
+.news ul li b {
+  color: var(--accent);
+  margin-right: 0.5em;
+  font-weight: bold;
+  font-size: 1em;
+  font-family: "Inter", 'Vazirmatn', Arial, sans-serif;
+  letter-spacing: .01em;
+}
+.news ul li:first-child, .news ul li:nth-child(2), .news ul li:nth-child(3) {
+  animation: pulseActive 2s infinite;
+  border-left-color: #e8ac7c;
+}
+@keyframes pulseActive {
+  0% { box-shadow: none;}
+  50% { box-shadow: 0 0 8px 2px #e8ac7c33;}
+  100%{ box-shadow: none;}
+}
+
+/* Persian tile border hover for links */
+a, a:visited{
+  transition: color .24s, border-color .26s;
+}
+a:hover, a:focus{
+  color: #e8ac7c;
+  outline: none;
+  position:relative;
+}
+section a {
+  color: var(--secondary);
+  padding-bottom: 1.5px;
+  border-bottom: 2.3px dotted #b6652e66;
+  transition: border-color .17s;
+  position: relative;
+}
+section a:hover, section a:focus {
+  color: #fff;
+  border-bottom: 2.3px solid #e8ac7c;
+  text-shadow: 0 2px 9px #e8ac7c22;
+  animation: borderWave 1.6s linear infinite;
+}
+@keyframes borderWave {
+  0% { box-shadow: 0 2px 12px #b6652e22;}
+  40% { box-shadow: 0 2px 22px #e8ac7c33;}
+  100%{ box-shadow: 0 2px 12px #b6652e22;}
+}
+
+/* Publication card style */
+.publications ul {
+  list-style: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+.publications ul li {
+  margin-bottom: 27px;
+  padding: 21px 16px 13px 16px;
+  background: linear-gradient(120deg, #24203a 82%, #28202a 100%);
+  box-shadow: 0 2px 11px #3a2f2ecc, 0 1px 8px #e8ac7c18;
+  border-radius: 12px;
+  border: 1.7px solid #e8ac7c34;
+  color: var(--neutral);
+  position: relative;
+  transition: box-shadow .32s cubic-bezier(.89,0,.72,1.13), transform .19s;
+  animation: fadeUpCard 1.14s cubic-bezier(.42,0,.58,1.03);
+  animation-fill-mode: both;
+  overflow-x: auto;
+}
+.publications ul li:hover {
+  box-shadow: 0 6px 24px #b6652e48, 0 1.5px 11px #e8ac7c34, 0 8px 26px #25203a88;
+  z-index: 2;
+  transform: translateY(-3px) scale(1.012);
+}
+.publication-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.publication-header strong {
+  font-weight: bold;
+  font-family: "Inter", 'Vazirmatn', sans-serif;
+  color: var(--secondary);
+  font-size: 1.02em;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  background: linear-gradient(90deg, #e8ac7c 60%, #b6652e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: headingShine 4s linear infinite;
+  margin-bottom:2px;
+}
+.publication-header .year {
+  font-size: 1em;
+  color: var(--accent);
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 2px;
+  background: #241813b9;
+  border-radius: 7px;
+  padding: 2px 9.5px;
+  letter-spacing: .03em;
+  border: 1.15px solid #e8ac7ca1;
+}
+.publications i, .publications em {
+  font-family: 'Inter', 'Vazirmatn', Arial, sans-serif;
+  letter-spacing: 0.01em;
+  font-style:italic;
+}
+.publications li i, .publications em {
+  color: #cbc1c1;
+}
+.publications li [href] {
+  margin-left:5px;
+}
+
+@media (max-width:490px){
+  .publication-header {flex-direction:column; align-items: flex-start;}
+  .publications li{font-size:0.99em;}
+}
+
+/* Education section */
+.education ul li {
+  margin-bottom: 16px;
+}
+.education strong {
+  color: var(--secondary);
+  font-weight: 700;
+  font-family: "Inter", 'Vazirmatn', Arial, sans-serif;
+}
+.education u {
+  color: var(--accent);
+  font-size: .995em;
+  text-decoration-color: #b6652e;
+  text-underline-offset: 2.5px;
+}
+
+/* "Volunteer work" section */
+.news h2 + ul {
+  margin-top: 10px;
+}
+
+/* Fade-in on scroll for real animations */
+[data-animate] { opacity: 0; transform: translateY(40px);}
+[data-animate].fade-in { opacity: 1; transform: none; transition: opacity .72s, transform .62s;}
+
+/* Responsive adjustments */
+@media (max-width:850px) {
+  .container { max-width: 99vw;}
+}
+@media (max-width:425px){
+  body{ font-size: 1em;}
+  header h1 {font-size: 2rem;}
+}
+
+
+footer {
+  margin:52px 0 0 0;
+  text-align: center;
+  color: #e8ac7c;
+  font-family: 'Lalezar', 'Inter', 'Vazirmatn', sans-serif;
+  font-size: 1.06em;
+  opacity: 0.91;
+  letter-spacing: 0.1em;
+  padding: 17px 0 9px 0;
+}
+
+footer::before {
+  content: '';
+  display: block;
+  height:4px;
+  width:180px;
+  background: linear-gradient(90deg, #e8ac7c 0%, #b6652e 80%, #e8ac7c 100%);
+  margin:0px auto 6px auto;
+  border-radius:1.6em;
+  opacity: .45;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #e8ac7c 0%, #b6652e 100%);
+  border-radius: 5px;
+}
+::-webkit-scrollbar{ background: #2a2230; width: 7px;}
+
+::selection {
+  background: #b6652e99;
+  color: #fff;
+}
+
+</style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Mohammadamin Shafiei</h1>
-            <p>Human-centerd AI M.Sc. student<br>
-               University of Milan<br>
-            <div class="contact-links">
-                <a href="https://github.com/Mamin78">Github</a>
-                <!-- <a href="#">twitter</a> -->
-                <a href="mailto:aminsh78@gmail.com">Email</a>
-                <a href="assets/docs/Mohammadamin_Shafiei_CV.pdf">cv</a>
-                <!-- <a href="#">bio</a> -->
-                <a href="https://scholar.google.com/citations?hl=en&user=EhgQLkwAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a>
-                <a href="https://www.linkedin.com/in/amin-shafiei">LinkedIn</a>
-            </div>
-        </header>
 
-        <section class="intro">
-            <img src="assets/img/profile.jpg" alt="Mohammadamin Shafiei's photo">
-            <p>I'm currently enrolled a near-graduation student in the <b>M.Sc.</b> program for <b>Human-centered Artificial Intelligence</b> at University of Milan.</p>
-        </section>
+<div class="container">
+<header>
+<h1>Mohammadamin Shafiei</h1>
+<p>Human-centerd AI M.Sc. student<br/>
+               University of Milan<br/>
+<div class="contact-links">
+<a href="https://github.com/Mamin78" title="Github" target="_blank" rel="noopener"><i class="fab fa-github"></i> Github</a>
+<a href="mailto:aminsh78@gmail.com" title="Email"><i class="fa fa-envelope"></i> Email</a>
+<a href="https://mamin78.github.io/assets/docs/Mohammadamin_Shafiei_CV.pdf" title="CV" target="_blank" rel="noopener"><i class="fa fa-file-alt"></i> cv</a>
+<a href="https://scholar.google.com/citations?hl=en&amp;user=EhgQLkwAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" title="Google Scholar" target="_blank" rel="noopener"><i class="fa fa-graduation-cap"></i> Google Scholar</a>
+<a href="https://www.linkedin.com/in/amin-shafiei" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+</div>
+</p>
+</header>
 
-        
-        <section class="research">
-            <h2>Research</h2>
-            <p>My research lies in the areas:</p><br>
-            <ul>
-                <li>Natural Language Processing</li>
-                <li>Computational Social Science</li>
-                <li>Large Language Models</li>
-                <li>Cultural Analytics</li>
-                <li>Bias & Fairness</li>
-                <li>Privacy and Memorization</li>
-            </ul>
-        </section>
-        
+<section class="intro" data-animate>
+<img alt="Mohammadamin Shafiei's photo" src="https://mamin78.github.io/assets/img/profile.jpg"/>
+<p>I'm currently enrolled a near-graduation student in the <b>M.Sc.</b> program for <b>Human-centered Artificial Intelligence</b> at University of Milan.</p>
+</section>
 
-        <section class="news">
-            <h2>News</h2>
-            <ul>
-                <li><b>08/2025</b>: One paper has been accepted at EMNLP 2025 (main). </li>
-                <li><b>05/2025</b>: One paper has been accepted at GeBNLP @ ACL 2025. </li>
-                <li><b>05/2025</b>: One paper has been accepted at ACL 2025 (findings) </li>
-                <li><b>01/2025</b>: One paper has been accepted at NAACL 2025 (findings). </li>
-                <li><b>09/2023</b>: Started my MSc in Human-centerd AI. </li>
-            </ul>
-        </section>
+<section class="research" data-animate>
+<h2>Research</h2>
+<p>My research lies in the areas:</p><br/>
+<ul>
+<li>Natural Language Processing</li>
+<li>Computational Social Science</li>
+<li>Large Language Models</li>
+<li>Cultural Analytics</li>
+<li>Bias &amp; Fairness</li>
+<li>Privacy and Memorization</li>
+</ul>
+</section>
 
+<section class="news" data-animate>
+<h2>News</h2>
+<ul>
+<li><b>08/2025</b>: One paper has been accepted at EMNLP 2025 (main). </li>
+<li><b>05/2025</b>: One paper has been accepted at GeBNLP @ ACL 2025. </li>
+<li><b>05/2025</b>: One paper has been accepted at ACL 2025 (findings) </li>
+<li><b>01/2025</b>: One paper has been accepted at NAACL 2025 (findings). </li>
+<li><b>09/2023</b>: Started my MSc in Human-centerd AI. </li>
+</ul>
+</section>
 
-
-        <section class="publications">
-            <h2>Publications</h2>
-            <p>*: equal contribution</p><br>
-            <ul>
-                <li class="last-publication-of-year">
-                    <div class="publication-header">
-                        <strong>TruthTrap: A Bilingual Benchmark for Evaluating Factually Correct Yet Misleading Information in Question Answering</strong>
-                        <span class="year">2025</span>
-                    </div>
-                    <i><u>Mohammadamin Shafiei</u></i>*, Hamidreza Saffari*, Mohammad Taher Pilehvar, Alessandro Raganato
-                    <em>ArXiv</em> [<a href="tba">paper</a>]
+<section class="publications" data-animate>
+<h2>Publications</h2>
+<p>*: equal contribution</p><br/>
+<ul>
+<li class="last-publication-of-year">
+<div class="publication-header">
+<strong>TruthTrap: A Bilingual Benchmark for Evaluating Factually Correct Yet Misleading Information in Question Answering</strong>
+<span class="year">2025</span>
+</div>
+<i><u>Mohammadamin Shafiei</u></i>*, Hamidreza Saffari*, Mohammad Taher Pilehvar, Alessandro Raganato
+                    <em>ArXiv</em> [<a href="https://mamin78.github.io/tba">paper</a>]
+</li>
+<li>
+<div class="publication-header">
+<strong>Farsi Physical Commonsense Reasoning Dataset</strong>
+</div>
+<i>Hamidreza Saffari*, <i><u>Mohammadamin Shafiei</u></i>*
+                    <em>ArXiv</em> [<a href="https://mamin78.github.io/tba">paper</a>]
+                </i></li>
+<li>
+<div class="publication-header">
+<strong>LingAlign: A Multilingual, Multidimensional Benchmark for Evaluating LLM Alignment Variability</strong>
+</div>
+<i><u>Mohammadamin Shafiei</u></i>*, Hamidreza Saffari*, Nafise Sadat Moosavi
+                    <em>ArXiv</em> [<a href="https://mamin78.github.io/tba">paper</a>]
                 </li>
-
-                <li>
-                    <div class="publication-header">
-                        <strong>Farsi Physical Commonsense Reasoning Dataset</strong>
-                    </div>
-                    <i>Hamidreza Saffari*, <i><u>Mohammadamin Shafiei</u></i>*
-                    <em>ArXiv</em> [<a href="tba">paper</a>]
-                </li>
-
-                <li>
-                    <div class="publication-header">
-                        <strong>LingAlign: A Multilingual, Multidimensional Benchmark for Evaluating LLM Alignment Variability</strong>
-                    </div>
-                    <i><u>Mohammadamin Shafiei</u></i>*, Hamidreza Saffari*, Nafise Sadat Moosavi
-                    <em>ArXiv</em> [<a href="tba">paper</a>]
-                </li>
-
-                
-                <li>
-                    <div class="publication-header">
-                        <strong>Beyond Hate Speech: NLP's Challenges and Opportunities in Uncovering Dehumanizing Language</strong>
-                    </div>
+<li>
+<div class="publication-header">
+<strong>Beyond Hate Speech: NLP's Challenges and Opportunities in Uncovering Dehumanizing Language</strong>
+</div>
                     Hamidreza Saffari*, <i><u>Mohammadamin Shafiei</u></i>*, Hezhao Zhang*, Lasana Harris, Nafise Sadat Moosavi
                     <em>ArXiv</em> [<a href="https://arxiv.org/pdf/2402.13818">paper</a>]
                 </li>
-                
-                <li>
-                    <div class="publication-header">
-                        <strong>More or Less Wrong: A Benchmark for Directional Bias in LLM Comparative Reasoning</strong>
-                    </div>
-                    <i><u>Mohammadamin Shafiei</u></i>*, Hamidreza Saffari*, Nafise Sadat Moosavi
+<li>
+<div class="publication-header">
+<strong>More or Less Wrong: A Benchmark for Directional Bias in LLM Comparative Reasoning</strong>
+</div>
+<i><u>Mohammadamin Shafiei</u></i>*, Hamidreza Saffari*, Nafise Sadat Moosavi
                     <em>ArXiv</em> [<a href="https://arxiv.org/abs/2506.03923">paper</a>]
                 </li>
-                <li>
-                    <div class="publication-header">
-                        <strong>Measuring Gender Bias in the Farsi Language</strong>
-                    </div>
+<li>
+<div class="publication-header">
+<strong>Measuring Gender Bias in the Farsi Language</strong>
+</div>
                     Hamidreza Saffari*, <i><u>Mohammadamin Shafiei</u></i>*, Donya Rooein, Debora Nozza
                     <em>GeBNLP @ ACL 2025</em> [<a href="https://aclanthology.org/2025.gebnlp-1.21.pdf">paper</a>]
                 </li>
-                <li>
-                    <div class="publication-header">
-                        <strong>MultiHoax: Benchmarking LLMs on false-premise multi-hop reasoning questions</strong>
-<!--                         <span class="year">2025</span> -->
-                    </div>
-                    <i><u>Mohammadamin Shafiei</u></i>*, Hamidreza Saffari*, Nafise Sadat Moosavi
+<li>
+<div class="publication-header">
+<strong>MultiHoax: Benchmarking LLMs on false-premise multi-hop reasoning questions</strong>
+</div>
+<i><u>Mohammadamin Shafiei</u></i>*, Hamidreza Saffari*, Nafise Sadat Moosavi
                     <em>ACL2025, Findings</em> [<a href="https://arxiv.org/pdf/2506.00264">paper</a>]
                 </li>
-                <li>
-                    <div class="publication-header">
-                        <strong>Can I introduce my boyfriend to my grandmother? Evaluating Large Language Models' Capabilities on Iranian Social Norm Classification</strong>
-<!--                         <span class="year">2025</span> -->
-                    </div>
+<li>
+<div class="publication-header">
+<strong>Can I introduce my boyfriend to my grandmother? Evaluating Large Language Models' Capabilities on Iranian Social Norm Classification</strong>
+</div>
                     Hamidreza Saffari*, <i><u>Mohammadamin Shafiei</u></i>*, Donya Rooein*, Francesco Pierri, Debora Nozza
                     <em>NAACL2025, Findings</em> [<a href="https://aclanthology.org/2025.findings-naacl.337.pdf">paper</a>]
-                    <!-- <em>arXiv preprint. 2024.</em> [<a href="https://aclanthology.org/2025.findings-naacl.337.pdf">paper</a>] [<a href="#">code</a>] [<a href="#">data</a>] [<a href="#">model</a>] -->
-                </li>
-
-                <li>
-                    <div class="publication-header">
-                        <strong>Not All Jokes Land: Evaluating Large Language Models' Understanding of Workplace Humor</strong>
-<!--                         <span class="year">2025</span> -->
-                    </div>
-                    <i><u>Mohammadamin Shafiei</u></i>*, Hamidreza Saffari*
+</li>
+<li>
+<div class="publication-header">
+<strong>Not All Jokes Land: Evaluating Large Language Models' Understanding of Workplace Humor</strong>
+</div>
+<i><u>Mohammadamin Shafiei</u></i>*, Hamidreza Saffari*
                     <em>ArXiv</em> [<a href="https://arxiv.org/abs/2506.01819">paper</a>]
-                    <!-- <em>arXiv preprint. 2024.</em> [<a href="https://aclanthology.org/2025.findings-naacl.337.pdf">paper</a>] [<a href="#">code</a>] [<a href="#">data</a>] [<a href="#">model</a>] -->
-                </li>
-            
-            </ul>
-        </section>
+</li>
+</ul>
+</section>
 
-        <section class="news">
-            <h2>Volunteer Work</h2>
-            <ul>
-                <li> Reviewer: AACL/IJCNLP 2025 Ethics reviewer | AAAI 2026 | NeurIPS 2025 Ethics reviewer | Social Sim, SoLaR @ COLM 2025. |  SRW, GeBNLP, WOAH @ ACL 2025</li>
-            </ul>
-        </section>
-        
-        <section class="education">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <strong>University of Milan</strong> - MSc in Human-Centered AI | <u>Sep. 2023 - Present</u>
-                </li>
-                <li>
-                    <strong>Shahid Beheshti University</strong> - BSc in Computer Engineering | <u>Sep. 2018 - Feb. 2023</u>
-                </li>
-            </ul>
-        </section>
-        
-        
-    </div>
+<section class="news" data-animate>
+<h2>Volunteer Work</h2>
+<ul>
+<li> Reviewer: AACL/IJCNLP 2025 Ethics reviewer | AAAI 2026 | NeurIPS 2025 Ethics reviewer | Social Sim, SoLaR @ COLM 2025. |  SRW, GeBNLP, WOAH @ ACL 2025</li>
+</ul>
+</section>
+
+<section class="education" data-animate>
+<h2>Education</h2>
+<ul>
+<li>
+<strong>University of Milan</strong> - MSc in Human-Centered AI | <u>Sep. 2023 - Present</u>
+</li>
+<li>
+<strong>Shahid Beheshti University</strong> - BSc in Computer Engineering | <u>Sep. 2018 - Feb. 2023</u>
+</li>
+</ul>
+</section>
+</div>
+
+<footer>
+Redesigned by Beautify AI
+</footer>
+
+<script>
+// Animate on scroll for [data-animate] sections
+function revealSections() {
+  let sections = document.querySelectorAll('[data-animate]');
+  const trigger = window.innerHeight * 0.93;
+  sections.forEach(sec=>{
+    const rect = sec.getBoundingClientRect();
+    if (rect.top < trigger) {
+      sec.classList.add('fade-in');
+    }
+  });
+}
+window.addEventListener('scroll', revealSections, {passive:true});
+window.addEventListener('DOMContentLoaded', revealSections);
+</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-

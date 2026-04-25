@@ -1,0 +1,99 @@
+[
+  {
+    "year": 2026,
+    "title": "TruthTrap: A Bilingual Benchmark for Evaluating Factually Correct Yet Misleading Information in Question Answering",
+    "authors": ["Mohammadamin Shafiei", "Hamidreza Saffari", "Mohammad Taher Pilehvar", "Alessandro Raganato"],
+    "venue": "EACL 2026, Findings",
+    "venueType": "acl",
+    "topics": ["factuality", "bias and fairness", "multi-culture and multilingual"],
+    "tags": ["Equal contribution"],
+    "desc": "Introduces a bilingual benchmark to detect answers that are factually supported yet misleading in QA.",
+    "links": { "paper": "https://aclanthology.org/2026.findings-eacl.155" }
+  },
+  {
+    "year": 2025,
+    "title": "Beyond Hate Speech: NLP's Challenges and Opportunities in Uncovering Dehumanizing Language",
+    "authors": ["Hamidreza Saffari", "Mohammadamin Shafiei", "Hezhao Zhang", "Lasana T. Harris", "Nafise Sadat Moosavi"],
+    "venue": "EMNLP 2025",
+    "venueType": "emnlp",
+    "topics": ["social understanding", "bias and fairness", "safety"],
+    "tags": ["Equal contribution"],
+    "desc": "Systematic LLM comparison on dehumanization detection; group-level disparities and derogation vs. dehumanization.",
+    "links": { "paper": "https://aclanthology.org/2025.emnlp-main.1370" }
+  },
+  {
+    "year": 2025,
+    "title": "Global PIQA: Evaluating Physical Commonsense Reasoning Across 100+ Languages and Cultures",
+    "authors": ["Tyler A. Chang", "Catherine Arnett", "Mohammadamin Shafiei", "…"],
+    "venue": "arXiv",
+    "venueType": "arxiv",
+    "topics": ["multi-culture and multilingual", "social understanding", "reasoning"],
+    "desc": "Participatory commonsense benchmark in 100+ language varieties, co-created by 335 researchers; culturally grounded and cross-lingual physical reasoning.",
+    "links": { "paper": "https://arxiv.org/abs/2510.24081" }
+  },
+  {
+    "year": 2025,
+    "title": "LingAlign: A Multilingual, Multidimensional Benchmark for Evaluating LLM Alignment Variability",
+    "authors": ["Mohammadamin Shafiei", "Hamidreza Saffari", "Nafise Sadat Moosavi"],
+    "venue": "arXiv",
+    "venueType": "arxiv",
+    "topics": ["safety", "bias and fairness", "multi-culture and multilingual"],
+    "tags": ["Equal contribution"],
+    "desc": "Multilingual, multidimensional benchmark for how LLM alignment varies across languages and dimensions.",
+    "links": {}
+  },
+  {
+    "year": 2025,
+    "title": "More or Less Wrong: A Benchmark for Directional Bias in LLM Comparative Reasoning",
+    "authors": ["Mohammadamin Shafiei", "Hamidreza Saffari", "Nafise Sadat Moosavi"],
+    "venue": "arXiv",
+    "venueType": "arxiv",
+    "topics": ["bias and fairness", "reasoning", "factuality"],
+    "tags": ["Equal contribution"],
+    "desc": "Evaluates whether models exhibit systematic skew when comparing two sides of an issue.",
+    "links": { "paper": "https://arxiv.org/abs/2506.03923" }
+  },
+  {
+    "year": 2025,
+    "title": "Measuring Gender Bias in Language Models in Farsi",
+    "authors": ["Hamidreza Saffari", "Mohammadamin Shafiei", "Donya Rooein", "Debora Nozza"],
+    "venue": "GeBNLP @ ACL 2025",
+    "venueType": "workshop",
+    "topics": ["bias and fairness", "multi-culture and multilingual", "social understanding"],
+    "desc": "Empirical study of gender bias in Farsi LLMs and corpora across several tasks.",
+    "links": { "paper": "https://aclanthology.org/2025.gebnlp-1.21" }
+  },
+  {
+    "year": 2025,
+    "title": "MultiHoax: A Dataset of Multi-hop False-premise questions",
+    "authors": ["Mohammadamin Shafiei", "Hamidreza Saffari", "Nafise Sadat Moosavi"],
+    "venue": "ACL 2025, Findings",
+    "venueType": "acl",
+    "topics": ["factuality", "reasoning"],
+    "tags": ["Equal contribution"],
+    "desc": "Multihop QA under explicitly false premises to test reasoning and entailed inconsistency across regions and knowledge types.",
+    "links": { "paper": "https://aclanthology.org/2025.findings-acl.530" }
+  },
+  {
+    "year": 2025,
+    "title": "Can I Introduce My Boyfriend to My Grandmother? Evaluating Large Language Models' Capabilities on Iranian Social Norm Classification",
+    "authors": ["Hamidreza Saffari", "Mohammadamin Shafiei", "Donya Rooein", "Francesco Pierri", "Debora Nozza"],
+    "venue": "NAACL 2025, Findings",
+    "venueType": "acl",
+    "topics": ["social understanding", "multi-culture and multilingual", "bias and fairness"],
+    "tags": ["Equal contribution"],
+    "desc": "Social-norm understanding for Iranian context with culturally grounded scenarios.",
+    "links": { "paper": "https://aclanthology.org/2025.findings-naacl.337" }
+  },
+  {
+    "year": 2025,
+    "title": "Not All Jokes Land: Evaluating Large Language Models' Understanding of Workplace Humor",
+    "authors": ["Mohammadamin Shafiei", "Hamidreza Saffari"],
+    "venue": "arXiv",
+    "venueType": "arxiv",
+    "topics": ["social understanding", "reasoning"],
+    "tags": ["Equal contribution"],
+    "desc": "Benchmark for recognizing workplace humor and its absence.",
+    "links": { "paper": "https://arxiv.org/abs/2506.01819" }
+  }
+]

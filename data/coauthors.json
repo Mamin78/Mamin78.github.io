@@ -1,0 +1,54 @@
+{
+  "Hamidreza Saffari": {
+    "affiliation": "Politecnico di Milano",
+    "photo": "images/coauthors/hamidreza-saffari.png"
+  },
+  "Nafise Sadat Moosavi": {
+    "affiliation": "University of Sheffield",
+    "photo": "images/coauthors/nafise-sadat-moosavi.jpg"
+  },
+  "Mohammad Taher Pilehvar": {
+    "affiliation": "Cardiff University",
+    "photo": "images/coauthors/mohammad-taher-pilehvar.jpg"
+  },
+  "Alessandro Raganato": {
+    "affiliation": "University of Milano-Bicocca",
+    "photo": "images/coauthors/alessandro-raganato.jpg"
+  },
+  "Hezhao Zhang": {
+    "affiliation": "University of Sheffield",
+    "photo": "images/coauthors/hezhao-zhang.jpg"
+  },
+  "Lasana T. Harris": {
+    "affiliation": "University College London",
+    "photo": "images/coauthors/lasana-t-harris.jpg"
+  },
+  "Donya Rooein": {
+    "affiliation": "Bocconi University",
+    "photo": "images/coauthors/donya-rooein.png"
+  },
+  "Debora Nozza": {
+    "affiliation": "Bocconi University",
+    "photo": "images/coauthors/debora-nozza.jpg"
+  },
+  "Francesco Pierri": {
+    "affiliation": "Bocconi University",
+    "photo": "images/coauthors/francesco-pierri.jpg"
+  },
+  "Tyler A. Chang": {
+    "affiliation": "Google DeepMind; University of California, San Diego",
+    "photo": "images/coauthors/tyler-a-chang.jpg"
+  },
+  "Catherine Arnett": {
+    "affiliation": "EleutherAI",
+    "photo": "images/coauthors/catherine-arnett.png"
+  },
+  "Stella Biderman": {
+    "affiliation": "EleutherAI",
+    "photo": "images/coauthors/stella-biderman.jpg"
+  },
+  "David Ifeoluwa Adelani": {
+    "affiliation": "McGill University; Mila",
+    "photo": "images/coauthors/david-ifeoluwa-adelani.png"
+  }
+}

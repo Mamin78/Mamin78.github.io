@@ -1,0 +1,30 @@
+[
+  {
+    "org": "Guida e Vai",
+    "date": "2026 – Present",
+    "role": "AI Engineer",
+    "supervisor": null,
+    "desc": "AI agents to support driving-license preparation: personalized content and study flows for each student."
+  },
+  {
+    "org": "University of Milan",
+    "date": "2024 – 2025",
+    "role": "Student Tutor",
+    "supervisor": null,
+    "desc": "Guided students on program procedures, thesis preparation, internship requirements, and other curricular and extracurricular questions."
+  },
+  {
+    "org": "Wallex Co.",
+    "date": "2023",
+    "role": "Machine Learning Engineer",
+    "supervisor": null,
+    "desc": "AI financial assistant with ChatGPT: prompt design, language detection, and extractors for trading flows, news summarization, and user support."
+  },
+  {
+    "org": "Behsa Co.",
+    "date": "2023",
+    "role": "Software Engineer",
+    "supervisor": null,
+    "desc": "APIs and data pipelines for real-time KPI monitoring (Spring-based stack)."
+  }
+]

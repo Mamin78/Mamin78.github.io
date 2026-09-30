@@ -1,0 +1,44 @@
+# Basic Information
+title: Mohammadamin Shafiei
+position: M.Sc. in Human-Centered Artificial Intelligence
+affiliation: University of Milan
+affiliation_link: https://www.unimi.it/en
+email: aminsh78 (at) gmail.com
+
+# Search Engine Optimization (SEO)
+# The following information is used to improve the website traffic from search engines, e.g., Google.
+keywords: Mohammadamin Shafiei, NLP, large language models, LLM evaluation, AI safety, bias, fairness, computational social science, University of Milan
+description: Mohammadamin Shafiei — NLP researcher working on LLM evaluation, safety, bias, and the social and cultural context of language technology.
+canonical: https://mamin78.github.io/
+
+# Links
+# If you don't need one of them, you may delete the corresponding line.
+google_scholar: https://scholar.google.com/citations?user=EhgQLkwAAAAJ&hl=en
+cv_link: assets/files/cv.pdf
+github_link: https://github.com/Mamin78
+linkedin: https://www.linkedin.com/in/amin-shafiei
+
+# Images (e.g., your profile picture and your website's favicon)
+# "favicon" and "favicon_dark" are used for the light and dark modes, respectively.
+avatar: ./assets/img/avatar.png
+favicon: ./assets/img/favicon.png
+favicon_dark: ./assets/img/favicon-dark.png
+
+# Footnote
+# You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
+enable_footnote: true
+
+# Auto Dark Mode
+# You may use the option to disable the automatic dark theme
+auto_dark_mode: true
+
+# Font
+# You can use this option to choose between Serif or Sans Serif fonts.
+font: "Serif" # or "Sans Serif"
+
+# The following files will be removed from the generated website.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE

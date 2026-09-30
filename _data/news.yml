@@ -1,0 +1,71 @@
+# News items, newest first. The first 10 are shown; the rest are behind "Show more".
+# `text` accepts HTML.
+# Dates marked "estimated" are not confirmed yet; the rest follow official notification dates.
+
+- date: "Sep. 2026"
+  text: >-
+    <em>Global PIQA</em> accepted to <strong>NeurIPS 2026</strong> (Evaluations & Datasets Track).
+
+- date: "Sep. 2026"
+  text: >-
+    <em>Moral Safety</em> accepted as an <strong style="color:#e74d3c">oral</strong> at <strong>GenAI4World @ COLM 2026</strong>.
+
+- date: "Aug. 2026"
+  text: >-
+    2 papers (<em>Moral Safety</em> and <em>More or Less Wrong</em>) accepted to <strong>Findings of EMNLP 2026</strong>.
+
+- date: "Jul. 2026"  # estimated (submission deadline was Jun. 30)
+  text: >-
+    <em>Moral Safety</em> accepted at <strong>WAB @ COLM 2026</strong>.
+
+- date: "Jul. 2026"
+  text: >-
+    Graduated from the M.Sc. in Human-Centered AI at the <strong>University of Milan</strong> with 110/110 cum laude.
+
+- date: "Jun. 2026"  # estimated
+  text: >-
+    Serving as a reviewer for <strong>ACL Rolling Review (ARR)</strong>.
+
+- date: "May 2026"  # estimated
+  text: >-
+    Serving as an Area Chair for <strong>EMNLP 2026</strong>.
+
+- date: "Mar. 2026"  # estimated
+  text: >-
+    Received the <strong>Special Graduate Entrance Scholarship</strong> from Simon Fraser University (declined).
+
+- date: "Feb. 2026"
+  text: >-
+    Joined <strong>Guida e Vai</strong> as an AI Engineer.
+
+- date: "Jan. 2026"
+  text: >-
+    <em>TruthTrap</em> accepted to <strong>Findings of EACL 2026</strong>.
+
+- date: "Aug. 2025"
+  text: >-
+    <em>Beyond Hate Speech</em> accepted to <strong>EMNLP 2025</strong> (main conference).
+
+- date: "Aug. 2025"  # estimated (AAAI-26 review period)
+  text: >-
+    Serving on the Program Committee of <strong>AAAI 2026</strong>.
+
+- date: "Jul. 2025"  # estimated (NeurIPS 2025 review period)
+  text: >-
+    Serving as an Ethics Reviewer for <strong>NeurIPS 2025</strong>.
+
+- date: "May 2025"
+  text: >-
+    <em>MultiHoax</em> accepted to <strong>Findings of ACL 2025</strong>.
+
+- date: "May 2025"
+  text: >-
+    <em>Farsi Gender Bias</em> accepted at <strong>GeBNLP @ ACL 2025</strong>.
+
+- date: "Jan. 2025"
+  text: >-
+    <em>Iranian Social Norms</em> accepted to <strong>Findings of NAACL 2025</strong>.
+
+- date: "Sep. 2023"
+  text: >-
+    Started the M.Sc. in Human-Centered AI at the <strong>University of Milan</strong>.

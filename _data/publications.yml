@@ -1,0 +1,79 @@
+# Publications, grouped into sections. Each item supports:
+#   title, authors, conference_short (badge), conference, pdf, code, page, bibtex, notes, others
+# Use * after a name for equal contribution.
+
+groups:
+
+  - heading: Publications
+    items:
+
+      - title: "Global PIQA: Evaluating Physical Commonsense Reasoning Across 100+ Languages and Cultures"
+        authors: Tyler Chang*, Catherine Arnett*, …, <strong>Mohammadamin Shafiei</strong>, …
+        conference_short: NeurIPS
+        conference: Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, Evaluations & Datasets Track, 2026.
+        pdf: https://arxiv.org/abs/2510.24081
+
+      - title: "Moral Safety in LLMs: Exposing Performative Compliance with Puzzled Cues"
+        authors: <strong>Mohammadamin Shafiei</strong>, <a href='https://stellalisy.com/'>Shuyue Stella Li</a>, <a href='https://homes.cs.washington.edu/~yuliats/'>Yulia Tsvetkov</a>
+        conference_short: EMNLP
+        conference: Findings of the Association for Computational Linguistics <strong>(EMNLP Findings)</strong>, 2026. Also at WAB @ COLM 2026 and GenAI4World @ COLM 2026.
+        notes: Oral at GenAI4World
+
+      - title: "Framing Bias in Arithmetic Reasoning: How Language and Identity Cues Steer LLM Outputs in Objective Tasks"
+        authors: <strong>Mohammadamin Shafiei*</strong>, Hamidreza Saffari*, <a href='https://ns-moosavi.github.io/'>Nafise Sadat Moosavi</a>
+        conference_short: EMNLP
+        conference: Findings of the Association for Computational Linguistics <strong>(EMNLP Findings)</strong>, 2026.
+
+      - title: "TruthTrap: A Bilingual Benchmark for Evaluating Factually Correct Yet Misleading Information in Question Answering"
+        authors: <strong>Mohammadamin Shafiei*</strong>, Hamidreza Saffari*, <a href='https://pilehvar.github.io/'>Mohammad Taher Pilehvar</a>, <a href='https://raganato.github.io/'>Alessandro Raganato</a>
+        conference_short: EACL
+        conference: Findings of the Association for Computational Linguistics <strong>(EACL Findings)</strong>, 2026.
+        pdf: https://aclanthology.org/2026.findings-eacl.155
+
+      - title: "Beyond Hate Speech: NLP's Challenges and Opportunities in Uncovering Dehumanizing Language"
+        authors: Hamidreza Saffari*, <strong>Mohammadamin Shafiei*</strong>, Hezhao Zhang*, Lasana T. Harris, <a href='https://ns-moosavi.github.io/'>Nafise Sadat Moosavi</a>
+        conference_short: EMNLP
+        conference: Conference on Empirical Methods in Natural Language Processing <strong>(EMNLP)</strong>, 2025.
+        pdf: https://aclanthology.org/2025.emnlp-main.1370
+
+      - title: "Measuring Gender Bias in Language Models in Farsi"
+        authors: Hamidreza Saffari*, <strong>Mohammadamin Shafiei*</strong>, <a href='https://donya-rooein.github.io/'>Donya Rooein</a>, <a href='https://dnozza.github.io/'>Debora Nozza</a>
+        conference_short: GeBNLP
+        conference: Workshop on Gender Bias in Natural Language Processing <strong>(GeBNLP @ ACL)</strong>, 2025.
+        pdf: https://aclanthology.org/2025.gebnlp-1.21
+
+      - title: "MultiHoax: A Dataset of Multi-hop False-Premise Questions"
+        authors: <strong>Mohammadamin Shafiei*</strong>, Hamidreza Saffari*, <a href='https://ns-moosavi.github.io/'>Nafise Sadat Moosavi</a>
+        conference_short: ACL
+        conference: Findings of the Association for Computational Linguistics <strong>(ACL Findings)</strong>, 2025.
+        pdf: https://aclanthology.org/2025.findings-acl.530
+
+      - title: "Can I Introduce My Boyfriend to My Grandmother? Evaluating Large Language Models' Capabilities on Iranian Social Norm Classification"
+        authors: Hamidreza Saffari*, <strong>Mohammadamin Shafiei*</strong>, <a href='https://donya-rooein.github.io/'>Donya Rooein</a>*, <a href='https://frapierri.github.io/'>Francesco Pierri</a>, <a href='https://dnozza.github.io/'>Debora Nozza</a>
+        conference_short: NAACL
+        conference: Findings of the Association for Computational Linguistics <strong>(NAACL Findings)</strong>, 2025.
+        pdf: https://aclanthology.org/2025.findings-naacl.337
+
+  - heading: Preprints, Under Review & Resubmissions
+    items:
+
+      - title: "CounterPlay: Evaluating LLM Counterfactual World Simulation with Games"
+        authors: <strong>Mohammadamin Shafiei</strong>, <a href='https://pilehvar.github.io/'>Mohammad Taher Pilehvar</a>, <a href='https://lasharavichander.github.io/'>Abhilasha Ravichander</a>, <a href='https://raganato.github.io/'>Alessandro Raganato</a>
+        conference_short: Submission
+        conference: EMNLP 2026 Submission. M.Sc. thesis.
+
+      - title: "LingAlign: A Multilingual, Multidimensional Benchmark for Evaluating LLM Alignment Variability"
+        authors: <strong>Mohammadamin Shafiei*</strong>, Hamidreza Saffari*, <a href='https://ns-moosavi.github.io/'>Nafise Sadat Moosavi</a>
+        conference_short: Preprint
+        conference: Preprint.
+
+      - title: "Not All Jokes Land: Evaluating Large Language Models' Understanding of Workplace Humor"
+        authors: <strong>Mohammadamin Shafiei*</strong>, Hamidreza Saffari*
+        conference_short: Preprint
+        conference: Preprint.
+        pdf: https://arxiv.org/abs/2506.01819
+
+      - title: "PsyEmbedding: A Framework for Aligning Language Models to Psychological Theory"
+        authors: Mohammad Atari, Yuqi Chen, Ying Li, Sixuan Li, Hamidreza Saffari, <strong>Mohammadamin Shafiei</strong>, AmirHesam Bolandi, Aida Mostafazadeh Davani
+        conference_short: Preprint
+        conference: Preprint.
